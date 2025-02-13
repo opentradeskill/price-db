@@ -147,7 +147,7 @@ if (missingOpts.length) {
                 lowest: auction.buyout.raw,
                 prices: {}
             };
-            auctionData[auction.itemId][auction.buyout.raw] = auction.quantity;
+            auctionData[auction.itemId].prices[auction.buyout.raw] = auction.quantity;
         }
 
         auctionsCounted.push(auction.auctionId);
